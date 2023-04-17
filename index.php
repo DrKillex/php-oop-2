@@ -52,11 +52,23 @@ class Accessorio  extends Prodotto{
     }
 };
 
-$pa1 = new Cibo('cibo prova','#', 'cane', 11, 22 ,['ca','sdas']);
-var_dump($pa1);
-$pa2 = new Gioco('gioco prova','#', 'cane', 11, 'rimbalza come un sasso' ,'10x10');
-var_dump($pa2);
-$pa3 = new Accessorio('acc prova','#', 'cane', 11, 'legno' ,'10x10');
-var_dump($pa3);
+$ciboProva1 = new Cibo('cibo prova','#', 'cane', 11, 22 ,['carne','verdura']);
+$giocoProva1 = new Gioco('gioco prova','#', 'cane', 11, 'rimbalza come un sasso' ,'10x10');
+$accessorioProva1 = new Accessorio('acc prova','#', 'cane', 11, 'legno' ,'10x10');
+
+$listaProdotti = [$ciboProva1, $giocoProva1, $accessorioProva1, new cibo('cibo prova 2','#', 'pesce', 11, 22 ,['carne','verdura'])];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
