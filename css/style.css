@@ -1,0 +1,9 @@
+.img-box {
+    height: 200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+img {
+    height: 100%;
+}
