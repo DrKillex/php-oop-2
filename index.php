@@ -90,10 +90,22 @@ $listaProdotti = [$ciboProva1, $giocoProva1, $accessorioProva1, new cibo('cibo p
                                 <?php foreach ($prodotto as $key => $value) : ?>
                                     <?php if ($key == 'nome') : ?>
                                         <h5 class="card-title"><?php echo $value ?></h5>
-
+                                        <?php elseif ($key == 'animale') : ?>
+                                            <p><?php echo $value ?></p>
+                                        <?php elseif ($key == 'ingredienti') : ?>
+                                            <p>
+                                                <?php echo $key, ' : ' ?>
+                                                <?php foreach ($value as $ingrediente ) : ?>
+                                                    <?php echo $ingrediente, ' '; ?>
+                                                <?php endforeach; ?>
+                                            </p>
+                                        <?php elseif ($key == 'img') : ?>
+                                            <?php continue; ?>
+                                        <?php else: ?>
+                                            <p><?php echo $key, ' : ', $value; ?></p>
                                     <?php endif; ?>
-                            </div>
-                        <?php endforeach; ?>
+                                <?php endforeach; ?>
+                            </div>                        
                         </div>
                     </div>
                 <?php endforeach; ?>
