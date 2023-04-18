@@ -11,4 +11,40 @@ class Cibo extends Prodotto
         $this->ingredienti = $_ingredienti;
         $this->tipo = 'cibo';
     }
+
+    /**
+     * Get the value of peso
+     */
+    public function getPeso()
+    {
+        return $this->peso;
+    }
+
+    /**
+     * Set the value of peso
+     */
+    public function setPeso($peso): self
+    {
+        $this->peso = $peso;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of ingredienti
+     */
+    public function getIngredienti()
+    {
+        return $this->ingredienti;
+    }
+
+    /**
+     * Set the value of ingredienti
+     */
+    public function setIngredienti($ingredienti): self
+    {
+        $this->ingredienti = $ingredienti;
+
+        return $this;
+    }
 };
