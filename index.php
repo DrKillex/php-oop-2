@@ -19,6 +19,7 @@ require_once __DIR__.'/server.php';
         <h1 class="text-center">prodotti</h1>
     </header>
     <?php include_once __DIR__.'/partials/main.php'; ?>
+    <?php include_once __DIR__.'/partials/footer.php'; ?>
 </body>
 
 </html>
