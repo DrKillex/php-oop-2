@@ -7,10 +7,10 @@ class Negozio{
 
     public function __construct($_via, $_city, $_orari, $_numeroTelefono)
     {
-        $this->via = $this->setVia($_via);
-        $this->city = $this->setCity($_city);
-        $this->orari = $this->setOrari($_orari);
-        $this->numeroTelefono = $this->setNumeroTelefono($_numeroTelefono);
+        $this->setVia($_via);
+        $this->setCity($_city);
+        $this->setOrari($_orari);
+        $this->setNumeroTelefono($_numeroTelefono);
     }
 
     /**
